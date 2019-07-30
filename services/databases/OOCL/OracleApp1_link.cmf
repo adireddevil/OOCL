@@ -1,0 +1,82 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:252cc565-e343-4549-8a8e-624a7def3fc6 -->
+<metadata name="OracleApp1" path="/services/databases/OOCL/OracleApp1" type="LINK" subtype="NONE" changeToken="0" virtual="true">
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/POC_DMA/Application/OracleApp1" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="BL_PACKAGE_INFO_ID">
+        <datatype type="DECIMAL" maxDigits="19" maxFractionalDigits="0"/>
+      </element>
+      <element name="BILL_OF_LADING_NUM">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="BL_PACKAGE_INFO_DESC">
+        <datatype type="STRING" maxLength="248"/>
+      </element>
+      <element name="IRIS2_TYPE">
+        <datatype type="STRING" maxLength="28"/>
+      </element>
+      <element name="IS_DELETED">
+        <datatype type="DECIMAL" maxDigits="1" maxFractionalDigits="0"/>
+      </element>
+      <element name="MVMT_SPEC_REF_NUM">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="SEQ_NUM">
+        <datatype type="DECIMAL" maxDigits="10" maxFractionalDigits="0"/>
+      </element>
+      <element name="SHIPMENT_NUM">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="BOOKED_EQP_TYPE">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="SUB_EQP_TYPE">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="BILL_OF_LADING_ID">
+        <datatype type="DECIMAL" maxDigits="19" maxFractionalDigits="0"/>
+      </element>
+      <element name="FRM_VERSION">
+        <datatype type="DECIMAL" maxDigits="19" maxFractionalDigits="0"/>
+      </element>
+      <element name="JPA_VERSION">
+        <datatype type="DECIMAL" maxDigits="19" maxFractionalDigits="0"/>
+      </element>
+      <element name="CREATE_BY">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="CREATE_CLIENT_ID">
+        <datatype type="STRING" maxLength="17"/>
+      </element>
+      <element name="CREATE_IODT">
+        <datatype type="STRING" maxLength="18"/>
+      </element>
+      <element name="UPDATE_BY">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="UPDATE_CLIENT_ID">
+        <datatype type="STRING" maxLength="17"/>
+      </element>
+      <element name="UPDATE_IODT">
+        <datatype type="STRING" maxLength="18"/>
+      </element>
+      <element name="REC_UPD_DT">
+        <datatype type="DATETIME"/>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="creationDate" type="LONG">1564456901126</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1564456901126</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1564456901126</attribute>
+  <attribute name="targetPath" type="STRING">/shared/POC_DMA/Application/OracleApp1</attribute>
+  <attribute name="targetType" type="SHORT">2</attribute>
+</metadata>

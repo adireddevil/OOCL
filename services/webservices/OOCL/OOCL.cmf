@@ -1,0 +1,223 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:252cc565-e343-4549-8a8e-624a7def3fc6 -->
+<metadata name="OOCL" path="/services/webservices/OOCL" type="DATA_SOURCE" subtype="COMPOSITE_WEB_SERVICE" changeToken="0" virtual="true">
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/policy/security/system/Http-Basic-Authentication.xml" type="POLICY">
+    <datatype name="Tree" type="TREE" refId="1"></datatype>
+  </dependency>
+  <dependency target="/services/webservices/OOCL/DMAView" type="LINK">
+    <datatype type="TABLE" refId="1">
+      <element name="ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="App Created By">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="App Created By_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="App Modified By">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="App Modified By_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Attachments">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Created By">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Created By_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Compliance Asset Id">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Content Type">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Created">
+        <datatype type="DATETIME"/>
+      </element>
+      <element name="Description of Issue test">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Type">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Edit">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Modified By">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Modified By_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Folder Child Count">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Folder Child Count_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Freight - Payment Term txt">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Item Child Count">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Item Child Count_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Modified">
+        <datatype type="DATETIME"/>
+      </element>
+      <element name="SI Received Week (VDC)">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="SI received Date (VDC)">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="SOP (Guideline/CEL/DCR) Issue">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Title">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Label setting">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Label setting_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Retention label">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Retention label_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Label applied by">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Label applied by_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Retention label Applied">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Retention label Applied_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Item is a Record">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Version">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="(Only For OTWL) Relevant Item">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Test Create Time">
+        <datatype type="DATETIME"/>
+      </element>
+      <element name="SI Received Week">
+        <datatype type="FLOAT" minValue="2.2250738585072014E-308" maxValue="1.7976931348623157E308"/>
+      </element>
+      <element name="Update Time">
+        <datatype type="DATETIME"/>
+      </element>
+      <element name="Number">
+        <datatype type="FLOAT" minValue="2.2250738585072014E-308" maxValue="1.7976931348623157E308"/>
+      </element>
+      <element name="CAMLQuery">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="QueryOptions">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="ViewId">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+    </datatype>
+  </dependency>
+  <dependency target="/services/webservices/OOCL/OracleApp1" type="LINK">
+    <datatype type="TABLE" refId="1">
+      <element name="BL_PACKAGE_INFO_ID">
+        <datatype type="DECIMAL" maxDigits="19" maxFractionalDigits="0"/>
+      </element>
+      <element name="BILL_OF_LADING_NUM">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="BL_PACKAGE_INFO_DESC">
+        <datatype type="STRING" maxLength="248"/>
+      </element>
+      <element name="IRIS2_TYPE">
+        <datatype type="STRING" maxLength="28"/>
+      </element>
+      <element name="IS_DELETED">
+        <datatype type="DECIMAL" maxDigits="1" maxFractionalDigits="0"/>
+      </element>
+      <element name="MVMT_SPEC_REF_NUM">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="SEQ_NUM">
+        <datatype type="DECIMAL" maxDigits="10" maxFractionalDigits="0"/>
+      </element>
+      <element name="SHIPMENT_NUM">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="BOOKED_EQP_TYPE">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="SUB_EQP_TYPE">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="BILL_OF_LADING_ID">
+        <datatype type="DECIMAL" maxDigits="19" maxFractionalDigits="0"/>
+      </element>
+      <element name="FRM_VERSION">
+        <datatype type="DECIMAL" maxDigits="19" maxFractionalDigits="0"/>
+      </element>
+      <element name="JPA_VERSION">
+        <datatype type="DECIMAL" maxDigits="19" maxFractionalDigits="0"/>
+      </element>
+      <element name="CREATE_BY">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="CREATE_CLIENT_ID">
+        <datatype type="STRING" maxLength="17"/>
+      </element>
+      <element name="CREATE_IODT">
+        <datatype type="STRING" maxLength="18"/>
+      </element>
+      <element name="UPDATE_BY">
+        <datatype type="STRING" maxLength="10"/>
+      </element>
+      <element name="UPDATE_CLIENT_ID">
+        <datatype type="STRING" maxLength="17"/>
+      </element>
+      <element name="UPDATE_IODT">
+        <datatype type="STRING" maxLength="18"/>
+      </element>
+      <element name="REC_UPD_DT">
+        <datatype type="DATETIME"/>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="bindingModel" type="STRING">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;&lt;bindingModel&gt;&lt;portBindings&gt;&lt;portBinding xsi:type=&quot;soapPortBinding&quot; timeout=&quot;0&quot; targetNamespace=&quot;http://tempuri.org/&quot; serviceName=&quot;OOCL&quot; portTypeName=&quot;{http://tempuri.org/}OOCLPortType&quot; portName=&quot;OOCLPort&quot; policyName=&quot;/policy/security/system/Http-Basic-Authentication.xml&quot; implementationFolder=&quot;/shared/impl/OOCL&quot; enableMTOM=&quot;false&quot; enableCustomEndpoint=&quot;false&quot; contractStyle=&quot;ABSTRACT&quot; contractFirst=&quot;false&quot; bindingName=&quot;{http://tempuri.org/}OOCLBinding&quot; soap12ContextUrlPath=&quot;/soap12&quot; soap11ContextUrlPath=&quot;/soap11&quot; endpointUrlPath=&quot;/OOCL&quot; enabled=&quot;true&quot; bindingStyles=&quot;WSDL11_SOAP11_HTTP WSDL11_SOAP12_HTTP&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;operationBindings&gt;&lt;operationBinding xsi:type=&quot;soapTableBinding&quot; usePortPipeline=&quot;false&quot; useOutputEnvelop=&quot;false&quot; useInputEnvelop=&quot;false&quot; timeout=&quot;0&quot; enableSOAPAction=&quot;true&quot; enableMTOM=&quot;false&quot; enableFastInfoset=&quot;false&quot; resourceName=&quot;DMAView&quot;&gt;&lt;inputBinding xsi:type=&quot;soapMessageBinding&quot; parameterStyle=&quot;WRAPPED&quot;&gt;&lt;wrapper xsi:type=&quot;soapWrapper&quot; partName=&quot;parameters&quot; messageName=&quot;{http://tempuri.org/}DMAViewInput&quot; elementTypeName=&quot;{http://tempuri.org/}DMAViewType&quot; elementName=&quot;{http://tempuri.org/}DMAView&quot;/&gt;&lt;/inputBinding&gt;&lt;outputBinding xsi:type=&quot;soapMessageBinding&quot; parameterStyle=&quot;WRAPPED&quot;&gt;&lt;wrapper xsi:type=&quot;soapWrapper&quot; partName=&quot;parameters&quot; messageName=&quot;{http://tempuri.org/}DMAViewOutput&quot; elementTypeName=&quot;{http://tempuri.org/}DMAViewResponseType&quot; elementName=&quot;{http://tempuri.org/}DMAViewResponse&quot;/&gt;&lt;/outputBinding&gt;&lt;parameterBindings&gt;&lt;parameterBinding xsi:type=&quot;soapParameterBinding&quot; useChildParameter=&quot;false&quot; partName=&quot;input&quot; messageName=&quot;{http://tempuri.org/}DMAViewInput&quot; location=&quot;body&quot; faultName=&quot;input&quot; name=&quot;input&quot; elementName=&quot;{http://tempuri.org/}DMAViewInput&quot; direction=&quot;INPUT&quot;/&gt;&lt;parameterBinding xsi:type=&quot;soapParameterBinding&quot; useChildParameter=&quot;false&quot; partName=&quot;output&quot; messageName=&quot;{http://tempuri.org/}DMAViewOutput&quot; location=&quot;body&quot; faultName=&quot;output&quot; name=&quot;output&quot; elementName=&quot;{http://tempuri.org/}DMAViewOutput&quot; direction=&quot;OUTPUT&quot;&gt;&lt;cursorBinding rowElementTypeName=&quot;{http://tempuri.org/}DMAViewOutputOutputRowType&quot; rowElementName=&quot;row&quot; cursorTypeName=&quot;{http://tempuri.org/}DMAViewOutputOutputCursorType&quot;&gt;&lt;columnBindings&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;ID&quot; elementName=&quot;ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;App Created By&quot; elementName=&quot;AppCreatedBy&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;App Created By_ID&quot; elementName=&quot;AppCreatedBy_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;App Modified By&quot; elementName=&quot;AppModifiedBy&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;App Modified By_ID&quot; elementName=&quot;AppModifiedBy_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Attachments&quot; elementName=&quot;Attachments&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Created By&quot; elementName=&quot;CreatedBy&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Created By_ID&quot; elementName=&quot;CreatedBy_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Compliance Asset Id&quot; elementName=&quot;ComplianceAssetId&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Content Type&quot; elementName=&quot;ContentType&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Created&quot; elementName=&quot;Created&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Description of Issue test&quot; elementName=&quot;DescriptionofIssuetest&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Type&quot; elementName=&quot;Type&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Edit&quot; elementName=&quot;Edit&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Modified By&quot; elementName=&quot;ModifiedBy&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Modified By_ID&quot; elementName=&quot;ModifiedBy_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Folder Child Count&quot; elementName=&quot;FolderChildCount&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Folder Child Count_ID&quot; elementName=&quot;FolderChildCount_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Freight - Payment Term txt&quot; elementName=&quot;Freight-PaymentTermtxt&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Item Child Count&quot; elementName=&quot;ItemChildCount&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Item Child Count_ID&quot; elementName=&quot;ItemChildCount_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Modified&quot; elementName=&quot;Modified&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;SI Received Week (VDC)&quot; elementName=&quot;SIReceivedWeekVDC&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;SI received Date (VDC)&quot; elementName=&quot;SIreceivedDateVDC&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;SOP (Guideline/CEL/DCR) Issue&quot; elementName=&quot;SOPGuidelineCELDCRIssue&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Title&quot; elementName=&quot;Title&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Label setting&quot; elementName=&quot;Labelsetting&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Label setting_ID&quot; elementName=&quot;Labelsetting_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Retention label&quot; elementName=&quot;Retentionlabel&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Retention label_ID&quot; elementName=&quot;Retentionlabel_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Label applied by&quot; elementName=&quot;Labelappliedby&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Label applied by_ID&quot; elementName=&quot;Labelappliedby_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Retention label Applied&quot; elementName=&quot;RetentionlabelApplied&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Retention label Applied_ID&quot; elementName=&quot;RetentionlabelApplied_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Item is a Record&quot; elementName=&quot;ItemisaRecord&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Version&quot; elementName=&quot;Version&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;(Only For OTWL) Relevant Item&quot; elementName=&quot;OnlyForOTWLRelevantItem&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Test Create Time&quot; elementName=&quot;TestCreateTime&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;SI Received Week&quot; elementName=&quot;SIReceivedWeek&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Update Time&quot; elementName=&quot;UpdateTime&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;Number&quot; elementName=&quot;Number&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;CAMLQuery&quot; elementName=&quot;CAMLQuery&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;QueryOptions&quot; elementName=&quot;QueryOptions&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;ViewId&quot; elementName=&quot;ViewId&quot;/&gt;&lt;/columnBindings&gt;&lt;/cursorBinding&gt;&lt;/parameterBinding&gt;&lt;/parameterBindings&gt;&lt;/operationBinding&gt;&lt;operationBinding xsi:type=&quot;soapTableBinding&quot; usePortPipeline=&quot;false&quot; useOutputEnvelop=&quot;false&quot; useInputEnvelop=&quot;false&quot; timeout=&quot;0&quot; enableSOAPAction=&quot;true&quot; enableMTOM=&quot;false&quot; enableFastInfoset=&quot;false&quot; resourceName=&quot;OracleApp1&quot;&gt;&lt;inputBinding xsi:type=&quot;soapMessageBinding&quot; parameterStyle=&quot;WRAPPED&quot;&gt;&lt;wrapper xsi:type=&quot;soapWrapper&quot; partName=&quot;parameters&quot; messageName=&quot;{http://tempuri.org/}OracleApp1Input&quot; elementTypeName=&quot;{http://tempuri.org/}OracleApp1Type&quot; elementName=&quot;{http://tempuri.org/}OracleApp1&quot;/&gt;&lt;/inputBinding&gt;&lt;outputBinding xsi:type=&quot;soapMessageBinding&quot; parameterStyle=&quot;WRAPPED&quot;&gt;&lt;wrapper xsi:type=&quot;soapWrapper&quot; partName=&quot;parameters&quot; messageName=&quot;{http://tempuri.org/}OracleApp1Output&quot; elementTypeName=&quot;{http://tempuri.org/}OracleApp1ResponseType&quot; elementName=&quot;{http://tempuri.org/}OracleApp1Response&quot;/&gt;&lt;/outputBinding&gt;&lt;parameterBindings&gt;&lt;parameterBinding xsi:type=&quot;soapParameterBinding&quot; useChildParameter=&quot;false&quot; partName=&quot;input&quot; messageName=&quot;{http://tempuri.org/}OracleApp1Input&quot; location=&quot;body&quot; faultName=&quot;input&quot; name=&quot;input&quot; elementName=&quot;{http://tempuri.org/}OracleApp1Input&quot; direction=&quot;INPUT&quot;/&gt;&lt;parameterBinding xsi:type=&quot;soapParameterBinding&quot; useChildParameter=&quot;false&quot; partName=&quot;output&quot; messageName=&quot;{http://tempuri.org/}OracleApp1Output&quot; location=&quot;body&quot; faultName=&quot;output&quot; name=&quot;output&quot; elementName=&quot;{http://tempuri.org/}OracleApp1Output&quot; direction=&quot;OUTPUT&quot;&gt;&lt;cursorBinding rowElementTypeName=&quot;{http://tempuri.org/}OracleApp1OutputOutputRowType&quot; rowElementName=&quot;row&quot; cursorTypeName=&quot;{http://tempuri.org/}OracleApp1OutputOutputCursorType&quot;&gt;&lt;columnBindings&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;BL_PACKAGE_INFO_ID&quot; elementName=&quot;BL_PACKAGE_INFO_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;BILL_OF_LADING_NUM&quot; elementName=&quot;BILL_OF_LADING_NUM&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;BL_PACKAGE_INFO_DESC&quot; elementName=&quot;BL_PACKAGE_INFO_DESC&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;IRIS2_TYPE&quot; elementName=&quot;IRIS2_TYPE&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;IS_DELETED&quot; elementName=&quot;IS_DELETED&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;MVMT_SPEC_REF_NUM&quot; elementName=&quot;MVMT_SPEC_REF_NUM&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;SEQ_NUM&quot; elementName=&quot;SEQ_NUM&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;SHIPMENT_NUM&quot; elementName=&quot;SHIPMENT_NUM&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;BOOKED_EQP_TYPE&quot; elementName=&quot;BOOKED_EQP_TYPE&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;SUB_EQP_TYPE&quot; elementName=&quot;SUB_EQP_TYPE&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;BILL_OF_LADING_ID&quot; elementName=&quot;BILL_OF_LADING_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;FRM_VERSION&quot; elementName=&quot;FRM_VERSION&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;JPA_VERSION&quot; elementName=&quot;JPA_VERSION&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;CREATE_BY&quot; elementName=&quot;CREATE_BY&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;CREATE_CLIENT_ID&quot; elementName=&quot;CREATE_CLIENT_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;CREATE_IODT&quot; elementName=&quot;CREATE_IODT&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;UPDATE_BY&quot; elementName=&quot;UPDATE_BY&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;UPDATE_CLIENT_ID&quot; elementName=&quot;UPDATE_CLIENT_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;UPDATE_IODT&quot; elementName=&quot;UPDATE_IODT&quot;/&gt;&lt;columnBinding xsi:type=&quot;soapColumnBinding&quot; name=&quot;REC_UPD_DT&quot; elementName=&quot;REC_UPD_DT&quot;/&gt;&lt;/columnBindings&gt;&lt;/cursorBinding&gt;&lt;/parameterBinding&gt;&lt;/parameterBindings&gt;&lt;/operationBinding&gt;&lt;/operationBindings&gt;&lt;/portBinding&gt;&lt;portBinding xsi:type=&quot;restfulPortBinding&quot; targetNamespace=&quot;http://tempuri.org/&quot; serviceName=&quot;OOCL&quot; jsonWrappedTable=&quot;true&quot; jsonWrappedCursor=&quot;true&quot; jsonValidateXml=&quot;true&quot; jsonUseProcParamName=&quot;false&quot; jsonPackageName=&quot;OOCL&quot; jsonFieldAsString=&quot;false&quot; jsonBareValue=&quot;false&quot; xmlContextUrlPath=&quot;/xml&quot; jsonContextUrlPath=&quot;/json&quot; endpointUrlPath=&quot;/OOCL&quot; enabled=&quot;true&quot; bindingStyles=&quot;REST_XML REST_JSON&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;operationBindings&gt;&lt;operationBinding xsi:type=&quot;restfulTableBinding&quot; operationPathTemplate=&quot;/DMAView&quot; httpMethod=&quot;GET&quot; resourceName=&quot;DMAView&quot;&gt;&lt;inputBinding xsi:type=&quot;restfulMessageBinding&quot; parameterStyle=&quot;WRAPPED&quot;&gt;&lt;wrapper xsi:type=&quot;restfulWrapper&quot; elementTypeName=&quot;{http://tempuri.org/}DMAViewType&quot; elementName=&quot;{http://tempuri.org/}DMAView&quot;/&gt;&lt;/inputBinding&gt;&lt;outputBinding xsi:type=&quot;restfulMessageBinding&quot; parameterStyle=&quot;WRAPPED&quot;&gt;&lt;wrapper xsi:type=&quot;restfulWrapper&quot; elementTypeName=&quot;{http://tempuri.org/}DMAViewResponseType&quot; elementName=&quot;{http://tempuri.org/}DMAViewResponse&quot;/&gt;&lt;/outputBinding&gt;&lt;parameterBindings&gt;&lt;parameterBinding xsi:type=&quot;restfulParameterBinding&quot; xml=&quot;false&quot; nulLable=&quot;false&quot; bindingLocation=&quot;entity&quot; typeName=&quot;{http://tempuri.org/}DMAViewInputType&quot; name=&quot;input&quot; elementName=&quot;{http://tempuri.org/}DMAViewInput&quot; direction=&quot;INPUT&quot;/&gt;&lt;parameterBinding xsi:type=&quot;restfulParameterBinding&quot; xml=&quot;false&quot; nulLable=&quot;false&quot; bindingLocation=&quot;entity&quot; typeName=&quot;{http://tempuri.org/}DMAViewOutputType&quot; name=&quot;output&quot; elementName=&quot;{http://tempuri.org/}DMAViewOutput&quot; direction=&quot;OUTPUT&quot;&gt;&lt;cursorBinding rowElementTypeName=&quot;{http://tempuri.org/}DMAViewOutputRowType&quot; rowElementName=&quot;row&quot; cursorTypeName=&quot;{http://tempuri.org/}DMAViewOutputCursorType&quot;&gt;&lt;columnBindings&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}int&quot; name=&quot;ID&quot; elementName=&quot;ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;App Created By&quot; elementName=&quot;AppCreatedBy&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}int&quot; name=&quot;App Created By_ID&quot; elementName=&quot;AppCreatedBy_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;App Modified By&quot; elementName=&quot;AppModifiedBy&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}int&quot; name=&quot;App Modified By_ID&quot; elementName=&quot;AppModifiedBy_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;Attachments&quot; elementName=&quot;Attachments&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;Created By&quot; elementName=&quot;CreatedBy&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}int&quot; name=&quot;Created By_ID&quot; elementName=&quot;CreatedBy_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;Compliance Asset Id&quot; elementName=&quot;ComplianceAssetId&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;Content Type&quot; elementName=&quot;ContentType&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}dateTime&quot; name=&quot;Created&quot; elementName=&quot;Created&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;Description of Issue test&quot; elementName=&quot;DescriptionofIssuetest&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;Type&quot; elementName=&quot;Type&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;Edit&quot; elementName=&quot;Edit&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;Modified By&quot; elementName=&quot;ModifiedBy&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}int&quot; name=&quot;Modified By_ID&quot; elementName=&quot;ModifiedBy_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;Folder Child Count&quot; elementName=&quot;FolderChildCount&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}int&quot; name=&quot;Folder Child Count_ID&quot; elementName=&quot;FolderChildCount_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;Freight - Payment Term txt&quot; elementName=&quot;Freight-PaymentTermtxt&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;Item Child Count&quot; elementName=&quot;ItemChildCount&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}int&quot; name=&quot;Item Child Count_ID&quot; elementName=&quot;ItemChildCount_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}dateTime&quot; name=&quot;Modified&quot; elementName=&quot;Modified&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;SI Received Week (VDC)&quot; elementName=&quot;SIReceivedWeekVDC&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;SI received Date (VDC)&quot; elementName=&quot;SIreceivedDateVDC&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;SOP (Guideline/CEL/DCR) Issue&quot; elementName=&quot;SOPGuidelineCELDCRIssue&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;Title&quot; elementName=&quot;Title&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;Label setting&quot; elementName=&quot;Labelsetting&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}int&quot; name=&quot;Label setting_ID&quot; elementName=&quot;Labelsetting_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;Retention label&quot; elementName=&quot;Retentionlabel&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}int&quot; name=&quot;Retention label_ID&quot; elementName=&quot;Retentionlabel_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;Label applied by&quot; elementName=&quot;Labelappliedby&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}int&quot; name=&quot;Label applied by_ID&quot; elementName=&quot;Labelappliedby_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;Retention label Applied&quot; elementName=&quot;RetentionlabelApplied&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}int&quot; name=&quot;Retention label Applied_ID&quot; elementName=&quot;RetentionlabelApplied_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;Item is a Record&quot; elementName=&quot;ItemisaRecord&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;Version&quot; elementName=&quot;Version&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;(Only For OTWL) Relevant Item&quot; elementName=&quot;OnlyForOTWLRelevantItem&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}dateTime&quot; name=&quot;Test Create Time&quot; elementName=&quot;TestCreateTime&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}double&quot; name=&quot;SI Received Week&quot; elementName=&quot;SIReceivedWeek&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}dateTime&quot; name=&quot;Update Time&quot; elementName=&quot;UpdateTime&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}double&quot; name=&quot;Number&quot; elementName=&quot;Number&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;CAMLQuery&quot; elementName=&quot;CAMLQuery&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;QueryOptions&quot; elementName=&quot;QueryOptions&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;ViewId&quot; elementName=&quot;ViewId&quot;/&gt;&lt;/columnBindings&gt;&lt;/cursorBinding&gt;&lt;/parameterBinding&gt;&lt;/parameterBindings&gt;&lt;/operationBinding&gt;&lt;operationBinding xsi:type=&quot;restfulTableBinding&quot; operationPathTemplate=&quot;/OracleApp1&quot; httpMethod=&quot;GET&quot; resourceName=&quot;OracleApp1&quot;&gt;&lt;inputBinding xsi:type=&quot;restfulMessageBinding&quot; parameterStyle=&quot;WRAPPED&quot;&gt;&lt;wrapper xsi:type=&quot;restfulWrapper&quot; elementTypeName=&quot;{http://tempuri.org/}OracleApp1Type&quot; elementName=&quot;{http://tempuri.org/}OracleApp1&quot;/&gt;&lt;/inputBinding&gt;&lt;outputBinding xsi:type=&quot;restfulMessageBinding&quot; parameterStyle=&quot;WRAPPED&quot;&gt;&lt;wrapper xsi:type=&quot;restfulWrapper&quot; elementTypeName=&quot;{http://tempuri.org/}OracleApp1ResponseType&quot; elementName=&quot;{http://tempuri.org/}OracleApp1Response&quot;/&gt;&lt;/outputBinding&gt;&lt;parameterBindings&gt;&lt;parameterBinding xsi:type=&quot;restfulParameterBinding&quot; xml=&quot;false&quot; nulLable=&quot;false&quot; bindingLocation=&quot;entity&quot; typeName=&quot;{http://tempuri.org/}OracleApp1InputType&quot; name=&quot;input&quot; elementName=&quot;{http://tempuri.org/}OracleApp1Input&quot; direction=&quot;INPUT&quot;/&gt;&lt;parameterBinding xsi:type=&quot;restfulParameterBinding&quot; xml=&quot;false&quot; nulLable=&quot;false&quot; bindingLocation=&quot;entity&quot; typeName=&quot;{http://tempuri.org/}OracleApp1OutputType&quot; name=&quot;output&quot; elementName=&quot;{http://tempuri.org/}OracleApp1Output&quot; direction=&quot;OUTPUT&quot;&gt;&lt;cursorBinding rowElementTypeName=&quot;{http://tempuri.org/}OracleApp1OutputRowType&quot; rowElementName=&quot;row&quot; cursorTypeName=&quot;{http://tempuri.org/}OracleApp1OutputCursorType&quot;&gt;&lt;columnBindings&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}decimal&quot; name=&quot;BL_PACKAGE_INFO_ID&quot; elementName=&quot;BL_PACKAGE_INFO_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;BILL_OF_LADING_NUM&quot; elementName=&quot;BILL_OF_LADING_NUM&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;BL_PACKAGE_INFO_DESC&quot; elementName=&quot;BL_PACKAGE_INFO_DESC&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;IRIS2_TYPE&quot; elementName=&quot;IRIS2_TYPE&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}decimal&quot; name=&quot;IS_DELETED&quot; elementName=&quot;IS_DELETED&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;MVMT_SPEC_REF_NUM&quot; elementName=&quot;MVMT_SPEC_REF_NUM&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}decimal&quot; name=&quot;SEQ_NUM&quot; elementName=&quot;SEQ_NUM&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;SHIPMENT_NUM&quot; elementName=&quot;SHIPMENT_NUM&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;BOOKED_EQP_TYPE&quot; elementName=&quot;BOOKED_EQP_TYPE&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;SUB_EQP_TYPE&quot; elementName=&quot;SUB_EQP_TYPE&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}decimal&quot; name=&quot;BILL_OF_LADING_ID&quot; elementName=&quot;BILL_OF_LADING_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}decimal&quot; name=&quot;FRM_VERSION&quot; elementName=&quot;FRM_VERSION&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}decimal&quot; name=&quot;JPA_VERSION&quot; elementName=&quot;JPA_VERSION&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;CREATE_BY&quot; elementName=&quot;CREATE_BY&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;CREATE_CLIENT_ID&quot; elementName=&quot;CREATE_CLIENT_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;CREATE_IODT&quot; elementName=&quot;CREATE_IODT&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;UPDATE_BY&quot; elementName=&quot;UPDATE_BY&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;UPDATE_CLIENT_ID&quot; elementName=&quot;UPDATE_CLIENT_ID&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; name=&quot;UPDATE_IODT&quot; elementName=&quot;UPDATE_IODT&quot;/&gt;&lt;columnBinding xsi:type=&quot;restfulColumnBinding&quot; typeName=&quot;{http://www.w3.org/2001/XMLSchema}dateTime&quot; name=&quot;REC_UPD_DT&quot; elementName=&quot;REC_UPD_DT&quot;/&gt;&lt;/columnBindings&gt;&lt;/cursorBinding&gt;&lt;/parameterBinding&gt;&lt;/parameterBindings&gt;&lt;/operationBinding&gt;&lt;/operationBindings&gt;&lt;httpSecurityModel transportSecurity=&quot;ENABLED&quot; authSchemes=&quot;BASIC&quot;/&gt;&lt;/portBinding&gt;&lt;/portBindings&gt;&lt;/bindingModel&gt;</attribute>
+  <attribute name="creationDate" type="LONG">1564393300348</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="driverName" type="STRING">COMPOSITE_WEB_SERVICE</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1564456901134</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="name" type="STRING">OOCL</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1564393300348</attribute>
+  <attribute name="type" type="STRING">CompositeWebService</attribute>
+</metadata>

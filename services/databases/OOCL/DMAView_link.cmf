@@ -1,0 +1,156 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:252cc565-e343-4549-8a8e-624a7def3fc6 -->
+<metadata name="DMAView" path="/services/databases/OOCL/DMAView" type="LINK" subtype="NONE" changeToken="0" virtual="true">
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/POC_DMA/Business/Sharepoint/DMAView" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="App Created By">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="App Created By_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="App Modified By">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="App Modified By_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Attachments">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Created By">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Created By_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Compliance Asset Id">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Content Type">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Created">
+        <datatype type="DATETIME"/>
+      </element>
+      <element name="Description of Issue test">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Type">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Edit">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Modified By">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Modified By_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Folder Child Count">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Folder Child Count_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Freight - Payment Term txt">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Item Child Count">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Item Child Count_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Modified">
+        <datatype type="DATETIME"/>
+      </element>
+      <element name="SI Received Week (VDC)">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="SI received Date (VDC)">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="SOP (Guideline/CEL/DCR) Issue">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Title">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Label setting">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Label setting_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Retention label">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Retention label_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Label applied by">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Label applied by_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Retention label Applied">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Retention label Applied_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Item is a Record">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Version">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="(Only For OTWL) Relevant Item">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Test Create Time">
+        <datatype type="DATETIME"/>
+      </element>
+      <element name="SI Received Week">
+        <datatype type="FLOAT" minValue="2.2250738585072014E-308" maxValue="1.7976931348623157E308"/>
+      </element>
+      <element name="Update Time">
+        <datatype type="DATETIME"/>
+      </element>
+      <element name="Number">
+        <datatype type="FLOAT" minValue="2.2250738585072014E-308" maxValue="1.7976931348623157E308"/>
+      </element>
+      <element name="CAMLQuery">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="QueryOptions">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="ViewId">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="creationDate" type="LONG">1564392819079</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="impactLevel" type="INTEGER">0</attribute>
+  <attribute name="impactMessage" type="NULL"/>
+  <attribute name="lastModifiedDate" type="LONG">1564456818046</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1564392819079</attribute>
+  <attribute name="targetPath" type="STRING">/shared/POC_DMA/Business/Sharepoint/DMAView</attribute>
+  <attribute name="targetType" type="SHORT">2</attribute>
+</metadata>

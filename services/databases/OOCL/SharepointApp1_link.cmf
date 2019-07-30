@@ -1,0 +1,39 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:252cc565-e343-4549-8a8e-624a7def3fc6 -->
+<metadata name="SharepointApp1" path="/services/databases/OOCL/SharepointApp1" type="LINK" subtype="NONE" changeToken="0" virtual="true">
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/POC_DMA/Application/SharepointApp1" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="week">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="date">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="title">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="retention">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Version">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="creationDate" type="LONG">1564393157928</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="impactLevel" type="INTEGER">0</attribute>
+  <attribute name="impactMessage" type="NULL"/>
+  <attribute name="lastModifiedDate" type="LONG">1564456818046</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1564393157928</attribute>
+  <attribute name="targetPath" type="STRING">/shared/POC_DMA/Application/SharepointApp1</attribute>
+  <attribute name="targetType" type="SHORT">2</attribute>
+</metadata>
