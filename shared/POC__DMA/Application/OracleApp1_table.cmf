@@ -1,0 +1,348 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:c410c648-3c0c-479f-b50d-ebaf92e112fd -->
+<metadata name="OracleApp1" path="/shared/POC_DMA/Application/OracleApp1" type="TABLE" subtype="SQL_TABLE" changeToken="0" tableType="VIEW">
+  <columns>
+    <column name="BL_PACKAGE_INFO_ID" nullable="true">
+      <datatype type="DECIMAL" maxDigits="19" maxFractionalDigits="0"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="BILL_OF_LADING_NUM" nullable="true">
+      <datatype type="STRING" maxLength="10"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="BL_PACKAGE_INFO_DESC" nullable="true">
+      <datatype type="STRING" maxLength="248"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="IRIS2_TYPE" nullable="true">
+      <datatype type="STRING" maxLength="28"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="IS_DELETED" nullable="true">
+      <datatype type="DECIMAL" maxDigits="1" maxFractionalDigits="0"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="MVMT_SPEC_REF_NUM" nullable="true">
+      <datatype type="STRING" maxLength="10"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="SEQ_NUM" nullable="true">
+      <datatype type="DECIMAL" maxDigits="10" maxFractionalDigits="0"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="SHIPMENT_NUM" nullable="true">
+      <datatype type="STRING" maxLength="10"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="BOOKED_EQP_TYPE" nullable="true">
+      <datatype type="STRING" maxLength="10"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="SUB_EQP_TYPE" nullable="true">
+      <datatype type="STRING" maxLength="10"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="BILL_OF_LADING_ID" nullable="true">
+      <datatype type="DECIMAL" maxDigits="19" maxFractionalDigits="0"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="FRM_VERSION" nullable="true">
+      <datatype type="DECIMAL" maxDigits="19" maxFractionalDigits="0"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="JPA_VERSION" nullable="true">
+      <datatype type="DECIMAL" maxDigits="19" maxFractionalDigits="0"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="CREATE_BY" nullable="true">
+      <datatype type="STRING" maxLength="10"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="CREATE_CLIENT_ID" nullable="true">
+      <datatype type="STRING" maxLength="17"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="CREATE_IODT" nullable="true">
+      <datatype type="STRING" maxLength="18"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="UPDATE_BY" nullable="true">
+      <datatype type="STRING" maxLength="10"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="UPDATE_CLIENT_ID" nullable="true">
+      <datatype type="STRING" maxLength="17"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="UPDATE_IODT" nullable="true">
+      <datatype type="STRING" maxLength="18"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="REC_UPD_DT" nullable="true">
+      <datatype type="DATETIME"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+  </columns>
+  <indexes></indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/POC_DMA/Business/Joins/oracle/p_oracle_1" type="PROCEDURE">
+    <datatype type="PROCEDURE" refId="1">
+      <element name="result" direction="OUT">
+        <datatype type="TABLE" refId="2">
+          <element name="BL_PACKAGE_INFO_ID">
+            <datatype type="DECIMAL" maxDigits="19" maxFractionalDigits="0"/>
+          </element>
+          <element name="BILL_OF_LADING_NUM">
+            <datatype type="STRING" maxLength="10"/>
+          </element>
+          <element name="BL_PACKAGE_INFO_DESC">
+            <datatype type="STRING" maxLength="248"/>
+          </element>
+          <element name="IRIS2_TYPE">
+            <datatype type="STRING" maxLength="28"/>
+          </element>
+          <element name="IS_DELETED">
+            <datatype type="DECIMAL" maxDigits="1" maxFractionalDigits="0"/>
+          </element>
+          <element name="MVMT_SPEC_REF_NUM">
+            <datatype type="STRING" maxLength="10"/>
+          </element>
+          <element name="SEQ_NUM">
+            <datatype type="DECIMAL" maxDigits="10" maxFractionalDigits="0"/>
+          </element>
+          <element name="SHIPMENT_NUM">
+            <datatype type="STRING" maxLength="10"/>
+          </element>
+          <element name="BOOKED_EQP_TYPE">
+            <datatype type="STRING" maxLength="10"/>
+          </element>
+          <element name="SUB_EQP_TYPE">
+            <datatype type="STRING" maxLength="10"/>
+          </element>
+          <element name="BILL_OF_LADING_ID">
+            <datatype type="DECIMAL" maxDigits="19" maxFractionalDigits="0"/>
+          </element>
+          <element name="FRM_VERSION">
+            <datatype type="DECIMAL" maxDigits="19" maxFractionalDigits="0"/>
+          </element>
+          <element name="JPA_VERSION">
+            <datatype type="DECIMAL" maxDigits="19" maxFractionalDigits="0"/>
+          </element>
+          <element name="CREATE_BY">
+            <datatype type="STRING" maxLength="10"/>
+          </element>
+          <element name="CREATE_CLIENT_ID">
+            <datatype type="STRING" maxLength="17"/>
+          </element>
+          <element name="CREATE_IODT">
+            <datatype type="STRING" maxLength="18"/>
+          </element>
+          <element name="UPDATE_BY">
+            <datatype type="STRING" maxLength="10"/>
+          </element>
+          <element name="UPDATE_CLIENT_ID">
+            <datatype type="STRING" maxLength="17"/>
+          </element>
+          <element name="UPDATE_IODT">
+            <datatype type="STRING" maxLength="18"/>
+          </element>
+          <element name="REC_UPD_DT">
+            <datatype type="DATETIME"/>
+          </element>
+        </datatype>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="SQL" type="STRING">SELECT 
+    p_oracle_1.BL_PACKAGE_INFO_ID, 
+    p_oracle_1.BILL_OF_LADING_NUM, 
+    p_oracle_1.BL_PACKAGE_INFO_DESC, 
+    p_oracle_1.IRIS2_TYPE, 
+    p_oracle_1.IS_DELETED, 
+    p_oracle_1.MVMT_SPEC_REF_NUM, 
+    p_oracle_1.SEQ_NUM, 
+    p_oracle_1.SHIPMENT_NUM, 
+    p_oracle_1.BOOKED_EQP_TYPE, 
+    p_oracle_1.SUB_EQP_TYPE, 
+    p_oracle_1.BILL_OF_LADING_ID, 
+    p_oracle_1.FRM_VERSION, 
+    p_oracle_1.JPA_VERSION, 
+    p_oracle_1.CREATE_BY, 
+    p_oracle_1.CREATE_CLIENT_ID, 
+    p_oracle_1.CREATE_IODT, 
+    p_oracle_1.UPDATE_BY, 
+    p_oracle_1.UPDATE_CLIENT_ID, 
+    p_oracle_1.UPDATE_IODT, 
+    p_oracle_1.REC_UPD_DT
+FROM      
+    /shared/POC_DMA/Business/Joins/oracle/p_oracle_1() p_oracle_1</attribute>
+  <attribute name="creationDate" type="LONG">1564456767411</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
+  <attribute name="impactLevel" type="INTEGER">0</attribute>
+  <attribute name="impactMessage" type="NULL"/>
+  <attribute name="lastModifiedDate" type="LONG">1564456901134</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="model" type="BYTE_ARRAY">EIEJBAAAAAEQUgYBAAoAcABfAG8AcgBhAGMAbABlAF8AMQYCAAoAcABfAG8AcgBhAGMAbABlAF8A
+MQML/////wMKAACErQsRAAYABgBzAGgAYQByAGUAZAAHAFAATwBDAF8ARABNAEEACABCAHUAcwBp
+AG4AZQBzAHMABQBKAG8AaQBuAHMABgBvAHIAYQBjAGwAZQAKAHAAXwBvAHIAYQBjAGwAZQBfADEJ
+EAAAAAD//wMFAAAAAAgCEDEGAf//AQIBAQYAAQMAAQQAAQUAAwcAAAAABwkAAAABAAAAAAkKAAAA
+FBBBBgEAEgBCAEwAXwBQAEEAQwBLAEEARwBFAF8ASQBOAEYATwBfAEkARAYCAAAGA///BgT//wMK
+/////wgMEBcGAgAHAEQARQBDAEkATQBBAEwGAwAMAE4AVQBNAEIARQBSACgAMQA5ACwAMAApAysA
+AAAPAxIAAAABAw4AAAATAxAAAAAA//8DCwAAAAD//xBBBgEAEgBCAEkATABMAF8ATwBGAF8ATABB
+AEQASQBOAEcAXwBOAFUATQYCAAAGA///BgT//wMK/////wgMEBsGAgAHAFYAQQBSAEMASABBAFIG
+AwAMAFYAQQBSAEMASABBAFIAMgAoADEAMAApAysAAAAPAxIAAAABBAQAAAAAAAAACgETAf//AwsA
+AAAA//8QQQYBABQAQgBMAF8AUABBAEMASwBBAEcARQBfAEkATgBGAE8AXwBEAEUAUwBDBgIAAAYD
+//8GBP//Awr/////CAwQGwYCAAcAVgBBAFIAQwBIAEEAUgYDAA0AVgBBAFIAQwBIAEEAUgAyACgA
+MgA0ADgAKQMrAAAADwMSAAAAAQQEAAAAAAAAAPgBEwH//wMLAAAAAP//EEEGAQAKAEkAUgBJAFMA
+MgBfAFQAWQBQAEUGAgAABgP//wYE//8DCv////8IDBAbBgIABwBWAEEAUgBDAEgAQQBSBgMADABW
+AEEAUgBDAEgAQQBSADIAKAAyADgAKQMrAAAADwMSAAAAAQQEAAAAAAAAABwBEwH//wMLAAAAAP//
+EEEGAQAKAEkAUwBfAEQARQBMAEUAVABFAEQGAgAABgP//wYE//8DCv////8IDBAXBgIABwBEAEUA
+QwBJAE0AQQBMBgMACwBOAFUATQBCAEUAUgAoADEALAAwACkDKwAAAA8DEgAAAAEDDgAAAAEDEAAA
+AAD//wMLAAAAAP//EEEGAQARAE0AVgBNAFQAXwBTAFAARQBDAF8AUgBFAEYAXwBOAFUATQYCAAAG
+A///BgT//wMK/////wgMEBsGAgAHAFYAQQBSAEMASABBAFIGAwAMAFYAQQBSAEMASABBAFIAMgAo
+ADEAMAApAysAAAAPAxIAAAABBAQAAAAAAAAACgETAf//AwsAAAAA//8QQQYBAAcAUwBFAFEAXwBO
+AFUATQYCAAAGA///BgT//wMK/////wgMEBcGAgAHAEQARQBDAEkATQBBAEwGAwAMAE4AVQBNAEIA
+RQBSACgAMQAwACwAMAApAysAAAAPAxIAAAABAw4AAAAKAxAAAAAA//8DCwAAAAD//xBBBgEADABT
+AEgASQBQAE0ARQBOAFQAXwBOAFUATQYCAAAGA///BgT//wMK/////wgMEBsGAgAHAFYAQQBSAEMA
+SABBAFIGAwAMAFYAQQBSAEMASABBAFIAMgAoADEAMAApAysAAAAPAxIAAAABBAQAAAAAAAAACgET
+Af//AwsAAAAA//8QQQYBAA8AQgBPAE8ASwBFAEQAXwBFAFEAUABfAFQAWQBQAEUGAgAABgP//wYE
+//8DCv////8IDBAbBgIABwBWAEEAUgBDAEgAQQBSBgMADABWAEEAUgBDAEgAQQBSADIAKAAxADAA
+KQMrAAAADwMSAAAAAQQEAAAAAAAAAAoBEwH//wMLAAAAAP//EEEGAQAMAFMAVQBCAF8ARQBRAFAA
+XwBUAFkAUABFBgIAAAYD//8GBP//Awr/////CAwQGwYCAAcAVgBBAFIAQwBIAEEAUgYDAAwAVgBB
+AFIAQwBIAEEAUgAyACgAMQAwACkDKwAAAA8DEgAAAAEEBAAAAAAAAAAKARMB//8DCwAAAAD//xBB
+BgEAEQBCAEkATABMAF8ATwBGAF8ATABBAEQASQBOAEcAXwBJAEQGAgAABgP//wYE//8DCv////8I
+DBAXBgIABwBEAEUAQwBJAE0AQQBMBgMADABOAFUATQBCAEUAUgAoADEAOQAsADAAKQMrAAAADwMS
+AAAAAQMOAAAAEwMQAAAAAP//AwsAAAAA//8QQQYBAAsARgBSAE0AXwBWAEUAUgBTAEkATwBOBgIA
+AAYD//8GBP//Awr/////CAwQFwYCAAcARABFAEMASQBNAEEATAYDAAwATgBVAE0AQgBFAFIAKAAx
+ADkALAAwACkDKwAAAA8DEgAAAAEDDgAAABMDEAAAAAD//wMLAAAAAP//EEEGAQALAEoAUABBAF8A
+VgBFAFIAUwBJAE8ATgYCAAAGA///BgT//wMK/////wgMEBcGAgAHAEQARQBDAEkATQBBAEwGAwAM
+AE4AVQBNAEIARQBSACgAMQA5ACwAMAApAysAAAAPAxIAAAABAw4AAAATAxAAAAAA//8DCwAAAAD/
+/xBBBgEACQBDAFIARQBBAFQARQBfAEIAWQYCAAAGA///BgT//wMK/////wgMEBsGAgAHAFYAQQBS
+AEMASABBAFIGAwAMAFYAQQBSAEMASABBAFIAMgAoADEAMAApAysAAAAPAxIAAAABBAQAAAAAAAAA
+CgETAf//AwsAAAAA//8QQQYBABAAQwBSAEUAQQBUAEUAXwBDAEwASQBFAE4AVABfAEkARAYCAAAG
+A///BgT//wMK/////wgMEBsGAgAHAFYAQQBSAEMASABBAFIGAwAMAFYAQQBSAEMASABBAFIAMgAo
+ADEANwApAysAAAAPAxIAAAABBAQAAAAAAAAAEQETAf//AwsAAAAA//8QQQYBAAsAQwBSAEUAQQBU
+AEUAXwBJAE8ARABUBgIAAAYD//8GBP//Awr/////CAwQGwYCAAcAVgBBAFIAQwBIAEEAUgYDAAwA
+VgBBAFIAQwBIAEEAUgAyACgAMQA4ACkDKwAAAA8DEgAAAAEEBAAAAAAAAAASARMB//8DCwAAAAD/
+/xBBBgEACQBVAFAARABBAFQARQBfAEIAWQYCAAAGA///BgT//wMK/////wgMEBsGAgAHAFYAQQBS
+AEMASABBAFIGAwAMAFYAQQBSAEMASABBAFIAMgAoADEAMAApAysAAAAPAxIAAAABBAQAAAAAAAAA
+CgETAf//AwsAAAAA//8QQQYBABAAVQBQAEQAQQBUAEUAXwBDAEwASQBFAE4AVABfAEkARAYCAAAG
+A///BgT//wMK/////wgMEBsGAgAHAFYAQQBSAEMASABBAFIGAwAMAFYAQQBSAEMASABBAFIAMgAo
+ADEANwApAysAAAAPAxIAAAABBAQAAAAAAAAAEQETAf//AwsAAAAA//8QQQYBAAsAVQBQAEQAQQBU
+AEUAXwBJAE8ARABUBgIAAAYD//8GBP//Awr/////CAwQGwYCAAcAVgBBAFIAQwBIAEEAUgYDAAwA
+VgBBAFIAQwBIAEEAUgAyACgAMQA4ACkDKwAAAA8DEgAAAAEEBAAAAAAAAAASARMB//8DCwAAAAD/
+/xBBBgEACgBSAEUAQwBfAFUAUABEAF8ARABUBgIAAAYD//8GBP//Awr/////CAwQFgYCAAkAVABJ
+AE0ARQBTAFQAQQBNAFAGAwAJAFQASQBNAEUAUwBUAEEATQBQAysAAAAPAxIAAAAB//8DCwAAAAD/
+////CQYAAAABEIIDCgAAAnoDCwAAAYADDAAAAMgDDQAAAMj//wgDEHEDAQAAAAsDAgAAADIJAwAA
+AiYQdAMGAAAAAP//EHIGBP////8QcwMFAAAAAP//EHUBBwH//xB4Bgv/////EHcDCv///////xB5
+Bgz/////EHb//xB2//8Qdv//EHb//xB0AwYAAAAB//8QcgYE/////xBzAwUAAAAA//8QdQEHAf//
+EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHQDBgAAAAL//xByBgT/
+////EHMDBQAAAAD//xB1AQcB//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//EHb/
+/xB2//8QdAMGAAAAA///EHIGBP////8QcwMFAAAAAP//EHUBBwH//xB4Bgv/////EHcDCv//////
+/xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0AwYAAAAE//8QcgYE/////xBzAwUAAAAA//8QdQEH
+Af//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHQDBgAAAAX//xBy
+BgT/////EHMDBQAAAAD//xB1AQcB//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//
+EHb//xB2//8QdAMGAAAABv//EHIGBP////8QcwMFAAAAAP//EHUBBwH//xB4Bgv/////EHcDCv//
+/////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0AwYAAAAH//8QcgYE/////xBzAwUAAAAA//8Q
+dQEHAf//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHQDBgAAAAj/
+/xByBgT/////EHMDBQAAAAD//xB1AQcB//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Q
+dv//EHb//xB2//8QdAMGAAAACf//EHIGBP////8QcwMFAAAAAP//EHUBBwH//xB4Bgv/////EHcD
+Cv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0AwYAAAAK//8QcgYE/////xBzAwUAAAAA
+//8QdQEHAf//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHQDBgAA
+AAv//xByBgT/////EHMDBQAAAAD//xB1AQcB//8QeAYL/////xB3Awr///////8QeQYM/////xB2
+//8Qdv//EHb//xB2//8QdAMGAAAADP//EHIGBP////8QcwMFAAAAAP//EHUBBwH//xB4Bgv/////
+EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0AwYAAAAN//8QcgYE/////xBzAwUA
+AAAA//8QdQEHAf//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHQD
+BgAAAA7//xByBgT/////EHMDBQAAAAD//xB1AQcB//8QeAYL/////xB3Awr///////8QeQYM////
+/xB2//8Qdv//EHb//xB2//8QdAMGAAAAD///EHIGBP////8QcwMFAAAAAP//EHUBBwH//xB4Bgv/
+////EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0AwYAAAAQ//8QcgYE/////xBz
+AwUAAAAA//8QdQEHAf//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//
+EHQDBgAAABH//xByBgT/////EHMDBQAAAAD//xB1AQcB//8QeAYL/////xB3Awr///////8QeQYM
+/////xB2//8Qdv//EHb//xB2//8QdAMGAAAAEv//EHIGBP////8QcwMFAAAAAP//EHUBBwH//xB4
+Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0AwYAAAAT//8QcgYE////
+/xBzAwUAAAAA//8QdQEHAf//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Q
+dv//EHT//xByBgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Q
+dv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/
+////EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8QdwMK////
+////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8QeAYL////
+/xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD/
+/xB4Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz
+//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xBy
+BgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2
+//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2
+//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP//
+//8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr/////
+//8QeQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////
+EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//
+EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP/
+/xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIG
+BP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb/
+/xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb/
+/xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM////
+/xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv//////
+/xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8Q
+dwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8Q
+eAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///
+EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE
+/////xBz//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//
+EHT//xByBgT/////EHP//xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//
+EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/////
+EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8QdwMK////////
+EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/////EHP//xB1AQcA//8QeAYL/////xB3
+Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2//8QdP//EHIGBP////8Qc///EHUBBwD//xB4
+Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2//8Qdv//EHb//xB0//8QcgYE/////xBz//8Q
+dQEHAP//EHgGC/////8QdwMK////////EHkGDP////8Qdv//EHb//xB2//8Qdv//EHT//xByBgT/
+////EHP//xB1AQcA//8QeAYL/////xB3Awr///////8QeQYM/////xB2//8Qdv//EHb//xB2//8Q
+dP//EHIGBP////8Qc///EHUBBwD//xB4Bgv/////EHcDCv///////xB5Bgz/////EHb//xB2//8Q
+dv//EHb//xB0//8QcgYE/////xBz//8QdQEHAP//EHgGC/////8QdwMK////////EHkGDP////8Q
+dv//EHb//xB2//8Qdv///////w==</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1564456767411</attribute>
+</metadata>

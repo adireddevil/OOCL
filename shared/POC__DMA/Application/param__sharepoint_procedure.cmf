@@ -1,0 +1,216 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:c410c648-3c0c-479f-b50d-ebaf92e112fd -->
+<metadata name="param_sharepoint" path="/shared/POC_DMA/Application/param_sharepoint" type="PROCEDURE" subtype="SQL_SCRIPT_PROCEDURE" changeToken="0">
+  <parameters>
+    <parameter name="input" direction="IN" nullable="true">
+      <datatype name="VARCHAR" type="STRING" maxLength="255"/>
+    </parameter>
+    <parameter name="result" direction="OUT" nullable="true">
+      <datatype name="result" type="TABLE" refId="1">
+        <element name="Type">
+          <datatype name="VARCHAR" type="STRING" maxLength="2000"/>
+        </element>
+        <element name="Edit">
+          <datatype name="VARCHAR" type="STRING" maxLength="2000"/>
+        </element>
+        <element name="SI Received Week (VDC)">
+          <datatype name="VARCHAR" type="STRING" maxLength="255"/>
+        </element>
+        <element name="SI received Date (VDC)">
+          <datatype name="VARCHAR" type="STRING" maxLength="255"/>
+        </element>
+        <element name="Title">
+          <datatype name="VARCHAR" type="STRING" maxLength="255"/>
+        </element>
+        <element name="Label setting">
+          <datatype name="VARCHAR" type="STRING" maxLength="2000"/>
+        </element>
+        <element name="Expr1">
+          <datatype name="VARCHAR" type="STRING" maxLength="255"/>
+        </element>
+      </datatype>
+    </parameter>
+  </parameters>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/POC_DMA/Business/Sharepoint/DMAView" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="App Created By">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="App Created By_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="App Modified By">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="App Modified By_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Attachments">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Created By">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Created By_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Compliance Asset Id">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Content Type">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Created">
+        <datatype type="DATETIME"/>
+      </element>
+      <element name="Description of Issue test">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Type">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Edit">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Modified By">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Modified By_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Folder Child Count">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Folder Child Count_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Freight - Payment Term txt">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Item Child Count">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Item Child Count_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Modified">
+        <datatype type="DATETIME"/>
+      </element>
+      <element name="SI Received Week (VDC)">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="SI received Date (VDC)">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="SOP (Guideline/CEL/DCR) Issue">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Title">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Label setting">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Label setting_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Retention label">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Retention label_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Label applied by">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Label applied by_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Retention label Applied">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Retention label Applied_ID">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="Item is a Record">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="Version">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="(Only For OTWL) Relevant Item">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="Test Create Time">
+        <datatype type="DATETIME"/>
+      </element>
+      <element name="SI Received Week">
+        <datatype type="FLOAT" minValue="2.2250738585072014E-308" maxValue="1.7976931348623157E308"/>
+      </element>
+      <element name="Update Time">
+        <datatype type="DATETIME"/>
+      </element>
+      <element name="Number">
+        <datatype type="FLOAT" minValue="2.2250738585072014E-308" maxValue="1.7976931348623157E308"/>
+      </element>
+      <element name="CAMLQuery">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="QueryOptions">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+      <element name="ViewId">
+        <datatype type="STRING" maxLength="2000"/>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="Script" type="STRING">PROCEDURE param_sharepoint(
+    IN &quot;input&quot; VARCHAR(255), 
+    OUT result CURSOR (
+        &quot;Type&quot; VARCHAR(2000), 
+        Edit VARCHAR(2000), 
+        &quot;SI Received Week (VDC)&quot; VARCHAR(255), 
+        &quot;SI received Date (VDC)&quot; VARCHAR(255), 
+        Title VARCHAR(255), 
+        &quot;Label setting&quot; VARCHAR(2000), 
+        Expr1 VARCHAR(255)
+        )
+    )
+    BEGIN
+        OPEN result FOR 
+            SELECT 
+                DMAView.&quot;Type&quot;, 
+                DMAView.Edit, 
+                DMAView.&quot;SI Received Week (VDC)&quot;, 
+                DMAView.&quot;SI received Date (VDC)&quot;, 
+                DMAView.Title, 
+                DMAView.&quot;Label setting&quot;, 
+                &quot;input&quot; Expr1
+            FROM      
+                /shared/POC_DMA/Business/Sharepoint/DMAView DMAView
+where 
+		  DMAView.&quot;SI Received Week (VDC)&quot; = &quot;input&quot;
+;
+    END</attribute>
+  <attribute name="creationDate" type="LONG">1564389879776</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
+  <attribute name="impactLevel" type="INTEGER">0</attribute>
+  <attribute name="impactMessage" type="NULL"/>
+  <attribute name="lastModifiedDate" type="LONG">1564456818046</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="model" type="NULL"/>
+  <attribute name="native_only" type="STRING">false</attribute>
+  <attribute name="references" type="NULL"/>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1564389879776</attribute>
+</metadata>
